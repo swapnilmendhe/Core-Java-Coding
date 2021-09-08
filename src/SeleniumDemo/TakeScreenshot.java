@@ -23,6 +23,8 @@ public class TakeScreenshot {
 
 		driver.manage().window().maximize();
 		driver.get("https://www.instagram.com/");
+		
+		System.out.println("This is to test Title" + driver.getTitle());
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File scrFile = ((RemoteWebDriver) ts).getScreenshotAs(OutputType.FILE);
